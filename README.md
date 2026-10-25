@@ -1,6 +1,6 @@
 # TRACEguard
 
-[![CI](https://github.com/jaysflight1/traceguard/actions/workflows/ci.yml/badge.svg)](https://github.com/jaysflight1/traceguard/actions/workflows/ci.yml)
+[![CI](https://github.com/ShashankM7/TRACEguard/actions/workflows/ci.yml/badge.svg)](https://github.com/ShashankM7/TRACEguard/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 [![Node](https://img.shields.io/badge/node-%E2%89%A520-brightgreen.svg)](./package.json)
 
@@ -36,7 +36,7 @@ TRACEguard integrates all five interventions into a portable terminal protocol w
 
 ```bash
 # install (from GitHub for now — npm registry publish coming)
-npm install -g github:jaysflight1/traceguard
+npm install -g github:ShashankM7/TRACEguard
 
 # in any project repo
 traceguard init            # scaffold .traceguard/, CLAUDE.md, AGENTS.md
@@ -50,7 +50,26 @@ traceguard verify          # force a challenge pass
 ```
 
 > The shorter `tg` alias works for every command (`tg init`, `tg on claude`, `tg status`).
-> If you prefer not to install globally: `npx github:jaysflight1/traceguard <command>`.
+> If you prefer not to install globally: `npx github:ShashankM7/TRACEguard <command>`.
+
+## Troubleshooting
+
+### `traceguard` is not recognized or command not found
+
+First, check that the global installation completed successfully:
+
+```bash
+npm list -g --depth=0
+npm prefix -g
+```
+
+If `traceguard` is missing from the package list, rerun the installation command above and resolve any installation errors. If it is installed, check your `PATH`: npm places global executables directly in the prefix directory on Windows, or in its `bin` subdirectory on macOS/Linux. See [npm's executable locations](https://docs.npmjs.com/cli/v8/configuring-npm/folders/#executables). Open a new terminal after changing `PATH`, then try `traceguard --help`.
+
+To run without a global installation:
+
+```bash
+npx github:ShashankM7/TRACEguard --help
+```
 
 ## Verify it works (≈60 seconds)
 
@@ -132,3 +151,4 @@ node bin/traceguard.js --help
 ```
 
 This package targets Node 20+. See [`docs/IMPLEMENTATION_PLAN.md`](./docs/IMPLEMENTATION_PLAN.md) for the phase-by-phase build that produced the current tree.
+
