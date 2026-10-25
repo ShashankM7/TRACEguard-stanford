@@ -78,7 +78,7 @@ export function runInit(opts: InitOptions = {}): void {
   console.log(`  2. Confirm activation:`);
   console.log(`       ${tag.arrow('npx traceguard status        (or:  npx tg status)')}`);
   console.log();
-  console.log(dim('If TRACEguard is installed globally (`npm install -g traceguard`),'));
+  console.log(dim('If TRACEguard is installed globally (`npm install -g github:ShashankM7/TRACEguard-stanford`),'));
   console.log(dim('you can drop the `npx` prefix and just run `traceguard` or `tg`.'));
   console.log(dim('See `npx traceguard --help` or docs/COMMANDS.md for the full reference.'));
 }

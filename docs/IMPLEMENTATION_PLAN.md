@@ -15,7 +15,7 @@ Target stack:
 Repository layout (target end-state):
 
 ```
-traceguard/
+TRACEguard-stanford/
 ├── package.json
 ├── tsconfig.json
 ├── README.md
@@ -311,7 +311,7 @@ Acceptance: `npm test` green, `npm pack` produces a tarball that installs and ru
 | MVP 4: Claude Code hooks | 3, 5 |
 | MVP 5: Codex compatibility | 8 |
 
-A 2-day hackathon path: Phase 0 → 1 → 2 → 3 (on claude only) → 4 (Level 2/3 rules only) → 5 (PreToolUse + Stop) → 6 (Markdown receipt only) → ship. Defer self/reviewer challenge, Codex process wrapping, and `verify`.
+A focused Stanford project implementation path: Phase 0 → 1 → 2 → 3 (on claude only) → 4 (Level 2/3 rules only) → 5 (PreToolUse + Stop) → 6 (Markdown receipt only) → ship. Defer self/reviewer challenge, Codex process wrapping, and `verify`.
 
 ---
 

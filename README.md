@@ -1,6 +1,8 @@
-# TRACEguard
+# TRACEguard-stanford
 
-[![CI](https://github.com/ShashankM7/TRACEguard/actions/workflows/ci.yml/badge.svg)](https://github.com/ShashankM7/TRACEguard/actions/workflows/ci.yml)
+Stanford project: a standalone repository for TRACEguard. The package and CLI commands remain `traceguard` (or `tg`).
+
+[![CI](https://github.com/ShashankM7/TRACEguard-stanford/actions/workflows/ci.yml/badge.svg)](https://github.com/ShashankM7/TRACEguard-stanford/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 [![Node](https://img.shields.io/badge/node-%E2%89%A520-brightgreen.svg)](./package.json)
 
@@ -36,7 +38,7 @@ TRACEguard integrates all five interventions into a portable terminal protocol w
 
 ```bash
 # install (from GitHub for now — npm registry publish coming)
-npm install -g github:ShashankM7/TRACEguard
+npm install -g github:ShashankM7/TRACEguard-stanford
 
 # in any project repo
 traceguard init            # scaffold .traceguard/, CLAUDE.md, AGENTS.md
@@ -50,7 +52,7 @@ traceguard verify          # force a challenge pass
 ```
 
 > The shorter `tg` alias works for every command (`tg init`, `tg on claude`, `tg status`).
-> If you prefer not to install globally: `npx github:ShashankM7/TRACEguard <command>`.
+> If you prefer not to install globally: `npx github:ShashankM7/TRACEguard-stanford <command>`.
 
 ## Troubleshooting
 
@@ -68,7 +70,7 @@ If `traceguard` is missing from the package list, rerun the installation command
 To run without a global installation:
 
 ```bash
-npx github:ShashankM7/TRACEguard --help
+npx github:ShashankM7/TRACEguard-stanford --help
 ```
 
 ## Verify it works (≈60 seconds)
@@ -115,7 +117,7 @@ Every file edit TRACEguard makes is wrapped in HTML-comment sentinels, so `unins
 | `traceguard receipt latest` | Prints the Markdown of the most recent session receipt. |
 | `traceguard receipt list` | Lists every receipt, most recent first. |
 | `traceguard verify` | Forces a challenge pass against the latest receipt (static checks, optional self-challenge, optional reviewer). Exits 2 on a block verdict. |
-| `traceguard update` | Wrapper around `npm install -g traceguard@latest`. Use `--source github` for direct GitHub installs, `--check` for a dry run. Prints the per-project refresh commands afterwards. |
+| `traceguard update` | Updates from `github:ShashankM7/TRACEguard-stanford` by default. Use `--source npm` for the upstream npm package, `--check` for a dry run. Prints the per-project refresh commands afterwards. |
 | `traceguard uninstall` | Calls both `off` flows. Pass `--purge` to also delete `.traceguard/`. |
 | `traceguard --help` / `--version` | Standard commander help and version output. Works on any subcommand too. |
 

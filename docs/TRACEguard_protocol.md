@@ -2,6 +2,8 @@
 
 ## 1. Purpose
 
+This standalone repository is the Stanford project version of TRACEguard.
+
 TRACEguard is a terminal-native protocol and CLI wrapper for AI coding agents. It is designed to make agentic coding workflows more transparent, trustworthy, and accountable while preserving as much autonomy as possible.
 
 TRACEguard targets two agent environments:
@@ -20,7 +22,7 @@ TRACEguard is intended to be installed once, activated per project, and then app
 Example user flow:
 
 ```bash
-npm install -g traceguard
+npm install -g github:ShashankM7/TRACEguard-stanford
 traceguard init
 traceguard on claude
 traceguard on codex
@@ -702,7 +704,7 @@ Challenge mode: static/self/reviewer
 
 # 6. Recommended MVP Scope
 
-For a two-day research hackathon, implement the MVP in this order:
+For the Stanford project, implement the MVP in this order:
 
 ## MVP 1: Instruction Injection
 

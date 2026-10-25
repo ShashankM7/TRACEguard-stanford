@@ -17,11 +17,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaysflight1/traceguard.git"
+    "url": "git+https://github.com/ShashankM7/TRACEguard-stanford.git"
   },
-  "homepage": "https://github.com/jaysflight1/traceguard#readme",
+  "homepage": "https://github.com/ShashankM7/TRACEguard-stanford#readme",
   "bugs": {
-    "url": "https://github.com/jaysflight1/traceguard/issues"
+    "url": "https://github.com/ShashankM7/TRACEguard-stanford/issues"
   },
   "author": "TRACEguard contributors",
   "scripts": {

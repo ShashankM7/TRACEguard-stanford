@@ -35,7 +35,7 @@ printf "%sTRACEguard smoke test%s\n\n" "$BOLD" "$RESET"
 printf "%s[1/4] CLI installed?%s\n" "$BOLD" "$RESET"
 
 if ! command -v traceguard >/dev/null 2>&1; then
-  fail "\`traceguard\` not on PATH. Install with: npm install -g github:jaysflight1/traceguard"
+  fail "\`traceguard\` not on PATH. Install with: npm install -g github:ShashankM7/TRACEguard-stanford"
   exit 1
 fi
 

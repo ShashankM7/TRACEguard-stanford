@@ -8,10 +8,10 @@ export interface UpdateOptions {
 }
 
 const NPM_SOURCE = 'traceguard@latest';
-const GITHUB_SOURCE = 'github:jaysflight1/traceguard';
+const GITHUB_SOURCE = 'github:ShashankM7/TRACEguard-stanford';
 
 export async function runUpdate(opts: UpdateOptions = {}): Promise<void> {
-  const source = opts.source ?? 'npm';
+  const source = opts.source ?? 'github';
   const target = source === 'github' ? GITHUB_SOURCE : NPM_SOURCE;
 
   console.log(heading('TRACEguard update'));

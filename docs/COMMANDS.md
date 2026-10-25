@@ -252,11 +252,11 @@ Exit code is `2` on a block verdict, `0` otherwise. Useful as a pre-merge step.
 
 ## `traceguard update`
 
-Thin wrapper around `npm install -g traceguard@latest` that explains what's about to change and prints per-project refresh instructions afterwards.
+Thin wrapper around `npm install -g github:ShashankM7/TRACEguard-stanford` that explains what's about to change and prints per-project refresh instructions afterwards.
 
 **What it does:**
 
-- Shells out to `npm install -g <source>` where source is either `traceguard@latest` (default) or `github:jaysflight1/traceguard` (with `--source github`).
+- Shells out to `npm install -g <source>` where source is `github:ShashankM7/TRACEguard-stanford` by default. `--source npm` explicitly selects the upstream `traceguard@latest` package instead of this standalone repository.
 - Inherits stdio so you see npm's progress output directly.
 - On success, prints the three commands each project needs to run to refresh its per-project files (`init --force`, `on claude`, `on codex`).
 - On failure, surfaces common fixes (permissions, network).
@@ -264,8 +264,8 @@ Thin wrapper around `npm install -g traceguard@latest` that explains what's abou
 **Usage:**
 
 ```bash
-traceguard update                       # update from npm registry
-traceguard update --source github       # update from GitHub head
+traceguard update                       # update from this standalone GitHub repo
+traceguard update --source npm          # explicitly switch to the upstream npm package
 traceguard update --check               # dry run — show source, don't install
 ```
 

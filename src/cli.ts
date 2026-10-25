@@ -101,10 +101,10 @@ program
 program
   .command('update')
   .description('Update the installed TRACEguard package to the latest version')
-  .option('--source <where>', 'Install source: `npm` (default) or `github`', 'npm')
+  .option('--source <where>', 'Install source: `github` (default, this standalone repo) or `npm` (upstream)', 'github')
   .option('--check', 'Print what would happen without actually running npm install')
   .action(async (opts: { source?: string; check?: boolean }) => {
-    const source = opts.source === 'github' ? 'github' : 'npm';
+    const source = opts.source === 'npm' ? 'npm' : 'github';
     await runUpdate({ source, check: opts.check });
   });
 
